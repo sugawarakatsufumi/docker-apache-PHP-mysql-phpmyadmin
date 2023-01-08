@@ -13,6 +13,15 @@ docker-compose.ymlがあるディレクトリで`docker-compose up -d`を実行�
 1. php_copyから*php.ini-production又はphp.ini-development*を*./docker/php*にコピー*php.ini*にリネーム 
 1. これでphpの設定をいじれる様になります(変更した際には再起動を忘れないでください)
 
+php.iniはこれを加えた方がよい
+``` 
+[Date]
+date.timezone = "Asia/Tokyo"
+[mbstring]
+mbstring.internal_encoding = "UTF-8"
+mbstring.language = "Japanese"
+``` 
+
 ### httpd.confぽいことをしたい
 1. apache_conf_copyから*sites-available/000-default.conf*を*./docker/sites-available*にコピー
 1. これでapacheの設定を色々いじれる様になります(変更した際には再起動を忘れないでください)
