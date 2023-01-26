@@ -21,6 +21,13 @@ date.timezone = "Asia/Tokyo"
 mbstring.internal_encoding = "UTF-8"
 mbstring.language = "Japanese"
 ``` 
+https://qiita.com/YAJIMA/items/68de1bdeb71a921a718d
+
+mod_rewriteを動かすためにdockerのターミナルで
+``` 
+a2enmod rewrite
+``` 
+実行、apacheのリブート
 
 ### httpd.confぽいことをしたい
 1. apache_conf_copyから*sites-available/000-default.conf*を*./docker/sites-available*にコピー
