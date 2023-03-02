@@ -40,3 +40,7 @@ https://qiita.com/sugurutakahashi12345/items/5daf89b2d33ef8d9fa2e
 
 ## コマンドメモ
 `docker cp docker-apachephpmysqlphpmyadmin-php-1:/usr/local/etc/php test`
+mysql関連の関数はいってないので、、、
+`docker-php-ext-install mysqli`
+mode_rewirteもうごかないので
+`a2enmod rewrite`
